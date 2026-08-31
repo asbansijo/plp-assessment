@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Northgrain small-batch ceramics and glassware."
+    />
+    <title>Northgrain — Drinkware</title>
+    <link rel="stylesheet" href="./plp.css" />
+  </head>
+
+  <body>
+    <header class="northHeader">
+      <div class="northHeaderInner">
+        <a href="#" class="northLogo" aria-label="Northgrain home">
+          NORTHGRAIN
+        </a>
+
+        <nav class="northNavigation" aria-label="Main navigation">
+          <a href="#shop">Shop</a>
+          <a href="#about">About</a>
+        </nav>
+
+        <button
+          type="button"
+          class="northCartButton"
+          data-north-cart-open
+          aria-label="Open shopping cart"
+        >
+          <span>Cart</span>
+          <span
+            class="northCartCount"
+            data-north-cart-count
+            aria-label="0 items in cart"
+            hidden
+            >0</span
+          >
+        </button>
+      </div>
+    </header>
+
+    <main class="northMain">
+      <section
+        class="northProductSection"
+        id="shop"
+        aria-labelledby="northProductTitle"
+      >
+        <div class="northSectionIntro">
+          <h1 class="northProductTitle" id="northProductTitle">Drinkware</h1>
+
+          <p class="northProductDescription">
+            Small-batch ceramics and glassware.
+          </p>
+        </div>
+
+        <!-- Products will be rendered here -->
+        <div class="northProductGrid" data-north-products></div>
+      </section>
+    </main>
+
+    <!-- Cart overlay -->
+    <div class="northOverlay" data-north-overlay aria-hidden="true"></div>
+
+    <!-- Cart drawer -->
+    <aside
+      class="northCart"
+      data-north-cart
+      aria-label="Shopping cart"
+      aria-hidden="true"
+    ></aside>
+
+    <script>
+      window.northgrainProducts = [
+        {
+          id: "lumen-mug",
+          name: "Lumen Ceramic Mug",
+          category: "Drinkware",
+          price: 1290,
+          originalPrice: 1590,
+          gradient: "linear-gradient(135deg, #d8c7a7, #f1e9dc)",
+          variants: ["Sand", "Ivory"],
+        },
+
+        {
+          id: "harbor-tumbler",
+          name: "Harbor Tumbler",
+          category: "Drinkware",
+          price: 890,
+          gradient: "linear-gradient(135deg, #d7d7d7, #777)",
+          variants: ["Clear", "Smoke"],
+        },
+
+        {
+          id: "kiln-carafe",
+          name: "Kiln Carafe",
+          category: "Drinkware",
+          price: 2190,
+          gradient: "linear-gradient(135deg, #c8794d, #ead4bd)",
+          variants: ["Terracotta", "Cream"],
+        },
+               {
+          id: "basin-bowl",
+          name: "Basin Bowl",
+          category: "Tableware",
+          price: 1450,
+          originalPrice: 1750,
+          gradient: "linear-gradient(135deg, #d8c7a7, #f1e9dc)",
+          variants: ["Small", "Large"],
+        },
+
+        {
+          id: "ember-teapot",
+          name: "Ember Teapot",
+          category: "Drinkware",
+          price: 2890,
+          gradient: "linear-gradient(135deg, #c8794d, #ead4bd)",
+          variants: ["Clay", "Ivory"],
+        },
+
+        {
+          id: "drift-saucer",
+          name: "Drift Saucer(set of2)",
+          category: "Tableware",
+          price: 990,
+          gradient: "linear-gradient(135deg, #d7d7d7, #777)",
+          variants: ["Sand", "Glass"],
+        },
+      ]; 
+    </script>
+
+    <script src="./plp.js"></script>
+  </body>
+</html>
